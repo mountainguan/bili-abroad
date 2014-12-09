@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Web Player</title>
+   <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+   <script src="http://vjs.zencdn.net/4.11/video.js"></script>
+   <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+   <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+   <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+   <style type="text/css">
+   .wrap{clear: left;
+	float: left;
+	position: relative;
+	left: 25%;
+	text-align: center;
+	} 
+   .vjs-default-skin { color: #eeeeee; }
+   .vjs-default-skin .vjs-play-progress,
+   .vjs-default-skin .vjs-volume-level { background-color: #6caacc }
+   .vjs-default-skin .vjs-control-bar,
+   .vjs-default-skin .vjs-big-play-button { background: rgba(3,0,0,0.7) }
+   .vjs-default-skin .vjs-slider { background: rgba(3,0,0,0.2333333333333333) }
+	</style>
+	<script type="text/javascript">
+		function changescr()
+		{
+			var sourceFile=document.getElementById("NewSrc").value;
+			var mp4=document.getElementById("MY_VIDEO_1_html5_api");
+			mp4.src=sourceFile;
+		}
+	</script>
+</head>
+<body>
+
+<div class="wrap">
+	 <h1>Web Player</h1>
+	 <form class="bs-example bs-example-form" role="form">
+		<video id="MY_VIDEO_1" class="video-js vjs-default-skin" width="640" height="400" controls data-setup="{}" poster="MY_VIDEO_POSTER.jpg">
+        <source src="" type='video/mp4'>
+        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+		</video>
+		<br>
+		<div>
+			<table>
+				<tbody>
+					<tr>
+						<td><div class="input-group">
+							<span class="input-group-addon">URL</span>
+							<input type="text" id="NewSrc" class="form-control" placeholder="输入视频链接">
+						</div>
+						</td>
+						<td><button type="button" class="btn btn-success" onclick="changescr();">click</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+     </form>
+</div>
+
+
+</body>
+</html>
