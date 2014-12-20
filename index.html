@@ -8,6 +8,19 @@
    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
    <style type="text/css">
+   body {background-color: #DDDDDD}
+   .box {
+	margin: 10px auto;
+	padding: 16px 20px;
+	background: #FFFFFF;
+	border: 2px solid #E0E0E0;
+	color: #333333;
+	line-height: 26px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	}
    .wrap{clear: left;
 	float: left;
 	position: relative;
@@ -33,8 +46,8 @@
 <body>
 
 <div class="wrap">
-	 <h1>Web Player</h1>
-	 <form class="bs-example bs-example-form" role="form">
+	 <h1 class="box">Web Player</h1>
+	 <form class="bs-example bs-example-form box" role="form">
 		<video id="MY_VIDEO_1" class="video-js vjs-default-skin" width="640" height="400" controls data-setup="{}" poster="MY_VIDEO_POSTER.jpg">
         <source src="" type='video/mp4'>
         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
@@ -56,6 +69,7 @@
 			</table>
 		</div>
      </form>
+	 <h4 class="box"><a herf="https://github.com/mountainguan/bili-abroad">@bili-abroad project</a></h4>
 </div>
 
 
